@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="app">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body ng-controller="ctr">
+        <button  ng-click="cambiarOpcion(3)">
+            Angular
+        </button>
+        <button  ng-click="cambiarOpcion(2)">
+            Php
+        </button>
+        <button  ng-click="cambiarOpcion(1)">
+            Borrar todo
+        </button>
+        <div ng-switch="opcion">
+            <div ng-switch-when="1">
+                Bienvenido a Ng-Switch
+            </div>
+            <div ng-switch-when="2">
+                <img src="images/descarga.jpg"/>
+            </div>
+            <div ng-switch-when="3">
+                <img src="images/images.png"/>
+            </div>
+        </div>
+        <script src="angular/angular.min.js"></script>
+        <script src="configAngularJs/config.js"></script>
+        <script src="controlerJs/ctr.js"></script>
+    </body>
+</html>

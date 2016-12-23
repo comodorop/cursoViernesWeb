@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="app">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div ng-controller="ctr">
+            <input type="text" 
+                   ng-model="clientes.nombre"
+                   placeholder="Nombre.."/>
+            <input type="text" 
+                   ng-model="clientes.apellido"
+                   placeholder="Apellido.."/>
+            <input type="text" 
+                   ng-model="clientes.telefono"
+                   placeholder="Telefono.."/>
+            <button ng-click="agregarInformacion();" >
+                Agregar
+            </button>
+
+
+            <table>
+                <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                </thead>
+                <tr ng-repeat="cl in listaClientes">
+                    <td>{{cl.nombre}}</td>
+                    <td>{{cl.apellido}}</td>
+                    <td>{{cl.telefono}}</td>
+                </tr>
+            </table>
+
+        </div>
+        <script src="angular/angular.min.js"></script>
+        <script src="configAngularJs/config.js"></script>
+        <script src="controlerJs/ctr.js"></script>
+    </body>
+</html>

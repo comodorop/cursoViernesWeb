@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="app">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boos/css/bootstrap.min.css"/>
+    </head>
+    <body >
+        <div  class="container" ng-controller="ctr">
+            <div class="col-lg-12">
+                <div class="row">
+                    <input type="text" ng-model="dato"/>
+                    <p ng-if="dato != null">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    
+                    <br>
+                    Multiplicacion :{{2*4}}
+                    <br>
+                    Suma : {{4+5}}
+                    <br>
+                    Total = {{645637846 | currency }}
+
+
+
+                </div>
+            </div>
+        </div>
+        <script src="angular/angular.min.js"></script>
+        <script src="configAngularJs/config.js"></script>
+        <script src="controlerJs/ctr.js"></script>
+    </body>
+</html>
